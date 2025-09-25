@@ -1,0 +1,35 @@
+.page-section {
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    width: 100%;
+    background: linear-gradient(110deg, #f0f6ff 0%, #8bb2f7 50%, #003974 100%);
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.page-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 1rem;
+    color: #cce3ff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

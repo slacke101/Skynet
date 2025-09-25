@@ -1,0 +1,120 @@
+.chat-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #0057b7;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.chat-panel {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  width: 320px;
+  max-height: 480px;
+  /* Sky-like gradient base */
+  background: linear-gradient(180deg, #68b5ff 0%, #9ad3ff 50%, #eaf6ff 100%);
+  /* Overlay tiling with an SVG of actual clouds */
+  background-image: url('/clouds.svg');
+  background-repeat: repeat;
+  background-size: 500px 350px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+  color: #0b1f33; /* darker default text */
+}
+
+.chat-header {
+  background: #0057b7;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.chat-header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  /* transparent to let the sky show through */
+  background: transparent;
+}
+
+.chat-msg {
+  margin-bottom: 0.75rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 0.8rem;
+  max-width: 85%;
+  line-height: 1.3;
+  font-size: 0.9rem;
+  color: #0b1f33; /* darker message text */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.chat-msg.user {
+  background: rgba(255,255,255,0.92);
+  align-self: flex-end;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.chat-msg.assistant {
+  background: rgba(255,255,255,0.88);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255,255,255,0.9);
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.chat-input input {
+  flex: 1;
+  border: 1px solid #b6c2cf;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #0b1f33;
+  background: #ffffff;
+}
+
+.chat-input input::placeholder {
+  color: #4a5b6b;
+  opacity: 1;
+}
+
+.chat-input button {
+  background: #0057b7;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #0a66cc;
+}

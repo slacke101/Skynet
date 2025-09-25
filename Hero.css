@@ -1,0 +1,15 @@
+.hero-dark{background:none;color:#fff;padding:6rem 1rem 6rem;position:relative}
+.hero-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:4rem;flex-wrap:wrap}
+.hero-dark::after{display:none}
+.hero-copy{flex:1 1 480px}
+.tag{color:#0057d8}
+.hero-copy h1{font-size:clamp(2.5rem,5vw,3.7rem);line-height:1.1;margin:0 0 1.5rem}
+.accent{color:#1e7dff}
+.hero-copy p{font-size:1.125rem;margin:0 0 2rem;opacity:.85}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{background:#1e7dff;color:#fff;border:none;padding:.9rem 1.6rem;border-radius:.5rem;font-weight:600;cursor:pointer}
+.btn-ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);color:#fff;padding:.9rem 1.6rem;border-radius:.5rem;cursor:pointer}
+.btn-primary:hover{background:#3c8bff}.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.hero-mock img{width:300px;max-width:90%}
+.hero-mock{margin-top:30px}
+@media(min-width:1200px){.hero-mock img{width:360px}}

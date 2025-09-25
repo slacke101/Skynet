@@ -1,0 +1,68 @@
+.page-section {
+    min-height: calc(100vh - 60px);
+    margin-top: 60px;
+    width: 100%;
+    background: linear-gradient(110deg, #f0f6ff 0%, #8bb2f7 50%, #003974 100%);
+    padding: 2rem;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.page-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.page-btn {
+    background-color: #0057b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.page-btn:hover {
+    background-color: #003974;
+}
+
+.full-page {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: linear-gradient(110deg, #f0f6ff 0%, #8bb2f7 50%, #003974 100%);
+    color: white;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+}
+
+.back-link {
+    display: block;
+    margin-top: 1rem;
+    color: #cce3ff;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
