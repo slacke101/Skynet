@@ -2,6 +2,8 @@
 
 SkyNet is a personal capstone project (Oregon State University, CS) that tackles two common pain-points of air travel in one modern web app.
 
+# Click Link to visit Skynet https://skynet-green.vercel.app/ #
+
 ## Features
 
 ### 1. Layover Assistant
